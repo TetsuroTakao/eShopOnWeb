@@ -87,7 +87,7 @@ jobs:
 
       # Publish website to Azure App Service (WebApp)
       # Step disabled due to issue where the site sometimes can't be found: https://github.com/microsoft/pipelines-appservice-lib/issues/56. Instead deploy using CLI
-      - name: Publish Website to WebApp
+      - name: Publish Website to eshoponweb-webapp56714528
         if: false #Disable step due to comment above
         uses: Azure/webapps-deploy@v3
         with:
@@ -96,7 +96,7 @@ jobs:
           package: .net-app/app.zip
 
       # Publish website to Azure App Service using CLI (WebApp)
-      - name: Publish Website to WebApp
+      - name: Publish Website to eshoponweb-webapp56714528
         uses: Azure/cli@v2
         with:
           inlineScript: |
